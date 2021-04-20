@@ -1,0 +1,53 @@
+.sentPage{
+    min-height: 70vh;
+    box-sizing: border-box;
+    padding: 0 5px;
+    padding-bottom: 60px;
+
+    .headerL{
+        margin-top: 0 !important;
+        padding-top: 100px;
+    }
+
+    .headerM{
+        margin-top: 60px;
+    }
+
+    .sentMsg{
+        // position: absolute;
+        // top: 45vh;
+        // left: 50vw;
+        // width: 100vw;
+
+        // transform: translateX(-50%) translateY(-45%);
+
+
+        .postDiv{
+            margin-bottom: 20px;
+            .postList{
+               
+                margin: 30px auto;
+            }
+        }
+
+        .italic{
+            margin: 0 auto;
+            a{
+                padding-bottom: 60px;
+            }
+            
+        }
+    }
+}
+
+
+@media only screen and (min-width: 800px){
+    .sentPage{
+        .postDiv{
+            .postList{
+                justify-content: center;
+                // width: fit-content;
+            }
+        }
+    }
+}

@@ -1,0 +1,359 @@
+.mainHeader{
+    position: fixed;
+    z-index: 12;
+    width: 100vw;
+    .topBar{
+        position: relative;
+        z-index: 11;
+
+
+        background-color: rgb(51, 51, 51);
+        padding: 0px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .subscribe{
+            color: white;
+            opacity: .7;
+            font-size: small;
+            cursor: pointer;
+
+            transition: all .3s ease;
+
+                    &:hover{
+                        opacity: 1;
+                    }
+        }
+
+        .social{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: fit-content;
+            padding: 0;
+            height: 0px;
+            
+            
+            li{
+                margin-left: 15px;
+                a{
+                    display: block;
+                    height: 16px;
+                    width: 16px;
+                    // background-color: white;
+                    // border-radius: 100px;
+                    opacity: .7;
+                    background-position: center;
+                    background-size: contain;
+
+                    transition: all .3s ease;
+
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .head{
+        position: relative;
+        z-index: 11;
+        background-color: white;
+        
+        .logoBurger{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // background-color: $white;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+            
+            // width: 50%;
+            margin: 0 auto;
+            padding: 5px 10px;
+            .mainLogo{
+                background-image: url('../images/brand/logo-hor-text.svg');
+                height: 35px;
+                width: 160px;
+                cursor: pointer;
+                
+            }
+
+            .searchIcon{
+                background-image: url('../images/icons/search.svg');
+                height: 23px;
+                width: 23px;
+                cursor: pointer;
+            }
+
+            .burger{
+                width: 30px;
+                // height: 24px;
+                // margin: 0 auto;
+                // transform: translateY(-50%);
+                cursor: pointer;
+                transition: all 0.3s ease;
+                transform-origin: center;
+              }
+              .burger div{
+                width: 20px;
+                height: 3px;
+                background-color: #333945;
+                margin-bottom: 4px;
+                margin-left: 0;
+                border-radius: 6px;
+                transition: all 0.25s ease ;
+              } 
+              .burger div:first-child{
+                width: 25px;
+              }
+              .burger div:nth-child(2){
+                width: 23px;
+              }
+              .burger div:last-child{
+                width: 18px;
+                margin-bottom: 0;
+              }
+              .burgerOn div
+              {
+                width: 8px !important;
+                height: 8px !important;
+                // margin-left: 4px;
+                margin-bottom: 1px;
+                transform: translateX(50%);
+              }
+              .burgerOn div:first-child{
+                background-color: #9D63E9;
+              }
+              .burgerOn div:nth-child(2){
+                background-color: #5426F1;
+              }
+              .burgerOn div:nth-child(3){
+                background-color: #4DE3C2;
+              }
+        }
+
+        .searchHead{
+            background-color: $black;
+            border-radius: 0 0 5px 5px;
+            box-sizing: border-box;
+            padding: 12px 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: fixed;
+            width: 100%;
+
+            opacity: 0;
+            pointer-events: none;
+
+            transition: all .3s ease;
+
+            
+            .img{
+                background-image: url('../images/icons/search-white.svg');
+                width: 20px;
+                height: 20px;
+                // padding: 5px;
+                box-sizing: border-box;
+            }
+
+            .text{
+                width: 100%;
+                padding: 6px 13px;
+                margin-right: 20px;
+                border-radius: 15px;
+                // border: solid 1px rgb(233, 233, 233);
+                border: none;
+                color: $black;
+
+                font-family: 'Roboto', sans-serif;
+                // font-weight: bold;
+            }
+            button{
+                border: none;
+                background-color: rgba(0,0,0,0);
+                cursor: pointer;
+            }
+    
+            
+           
+        }
+
+        .searchOn{
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .mainNav{
+            
+            .navList{
+                background-color: rgba(255, 255, 255, 0.959);
+                // box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+                transform: translateX(100vw);
+                opacity: 0;
+                pointer-events: none;
+                padding-bottom: 10px;
+
+                transition: all .45s ease;
+
+                
+                
+
+                list-style: none;
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                padding: 0; 
+                
+                position: fixed;
+                z-index: 10;
+                top: 77px;
+                left: 0;
+                li{
+                    display: block;
+                    width: 85%;
+                        margin: 0 auto;
+
+                        border-top: solid 1px #c3c9d8;
+
+                        &:first-child{
+                            border-top: none;
+                        }
+                    a{
+                        color: $black;
+                        text-decoration: none;
+                        text-align: right;
+                        display: block;
+                        font-size: small;
+                        font-weight: 600;
+                        // opacity: .99;
+
+                        padding: 30px 10px;
+
+                        transition: all .3s ease;
+
+                        &:hover{
+                            color: $primaryColor;
+                        }
+                        
+                    }
+                }
+            }
+
+            
+        }
+        .navOn{
+            .navList{
+                transform: translateX(0);
+                opacity: 1;
+                pointer-events: all;
+            }
+            
+        }
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1100px){
+    .mainHeader{
+
+        .topBar{
+            .social{
+                margin-right: 20px;
+            }
+        }
+        
+
+        .head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+
+            .logoBurger{
+                width: 200px;
+                // padding: 10px;
+                margin: 0;
+                background-color: white;
+                box-shadow: none;
+            }
+
+            .burger{
+                display: none;
+            }
+
+            .searchIcon{
+                order: 1;
+                margin-left: 10px;
+
+                transition: all .2s ease;
+
+                &:hover{
+                    opacity: .8;
+                }
+            } 
+
+            .searchHead{
+                position: absolute;
+                left: 0px;
+                top: 45px;
+                border-radius: 0 0 10px 10px;
+
+                width: 50vw;
+                max-width: 500px;
+
+                background-color: white;
+
+                .text{
+                    border: solid 1px rgb(187, 187, 187);
+                }
+
+                .img{
+                    background-image: url('../images/icons/search.svg');
+                }
+
+            }
+
+            .mainNav{
+                width: fit-content;
+                .navList{
+                    position: static;
+                    width: fit-content;
+                    height: fit-content;
+
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-evenly;
+
+                    opacity: 1;
+                    pointer-events: all;
+
+                    transform: translateX(0);
+
+                    background-color: white;
+
+                    li{
+                        padding: 0;
+                        border-top: none;
+
+                        a{
+                            padding: 10px;
+                            margin: 0 30px;
+                            width: max-content;
+                            border-top: none;
+
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+<loc>https://www.productivityguys.com/</loc>
+<lastmod>2021-03-16T00:09:26+00:00</lastmod>
+</url>
+<url>
+<loc>https://www.productivityguys.com/articles</loc>
+<lastmod>2021-03-16T00:09:26+00:00</lastmod>
+</url>
+<url>
+<loc>https://www.productivityguys.com/tutorials</loc>
+<lastmod>2021-03-16T00:09:26+00:00</lastmod>
+</url>
+<url>
+<loc>https://www.productivityguys.com/top-5-lists</loc>
+<lastmod>2021-03-16T00:09:26+00:00</lastmod>
+</url>
+<url>
+<loc>https://www.productivityguys.com/reviews</loc>
+<lastmod>2021-03-16T00:09:26+00:00</lastmod>
+</url>
+<url>
+<loc>https://www.productivityguys.com/resources</loc>
+<lastmod>2021-03-16T00:09:26+00:00</lastmod>
+</url>
+<url>
+<loc>https://www.productivityguys.com/about</loc>
+<lastmod>2021-03-16T00:09:26+00:00</lastmod>
+</url>
+<url>
+<loc>https://www.productivityguys.com/latest-posts</loc>
+<lastmod>2021-03-16T00:09:26+00:00</lastmod>
+</url>
+
+
+
+
+<?php
+header('Content-type: application/xml');
+// db config
+require_once 'load.php';
+
+$blogs = getAll('tbl_blog');
+?>
+
+<?php
+while($row = $blogs->fetch(PDO::FETCH_ASSOC)): //Loop for printing all URLs one by one
+    $replaceSpace = str_replace(' ', '%20', $row['blog_title']);
+{
+ echo '<url>' . PHP_EOL; // Print url tag
+ echo '<loc>https://productivityguys.com/p?title='.$replaceSpace.'&id='.$row['blog_id'].'/</loc>' . PHP_EOL; // Print URLs
+ echo '<changefreq>daily</changefreq>' . PHP_EOL; // Set indexing Frequency
+ echo '</url>' . PHP_EOL; // End URLs
+}
+endwhile;
+?>
+
+</urlset>
