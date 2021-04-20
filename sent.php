@@ -19,14 +19,14 @@ include_once 'load.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Thank You - Productivity Guys</title>
+    <title>Thank You - Melange Media</title>
     <?php include_once 'templates/head.php'; ?>
     
     <meta name="description" content="Productivity. Learn More.">
 </head>
 <body>
 <main id="app">
-<h1 class="hidden">Productivity Guys - Sent</h1>
+<h1 class="hidden">Melange Media - Sent</h1>
 
 
 

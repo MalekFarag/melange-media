@@ -31,9 +31,9 @@ $ip = $_SERVER['REMOTE_ADDR'];
                     //mail config
                         ini_set('display_errors', 1);
                         error_reporting(E_ALL);
-                        $from = 'info@productivityguys.com';
-                        $to = 'info@productivityguys.com';
-                        $subject = "Message From $name | Productivity Guys Form";
+                        $from = 'contact@melangemedia.ca';
+                        $to = 'contact@melangemedia.ca';
+                        $subject = "Message From $name | Melange Media Form";
                         $message = "
 A someone filled and sent a contact form from the contact page.
 

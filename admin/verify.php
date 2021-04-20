@@ -21,7 +21,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veryifying User... - Productivy Guys Admin</title>
+    <title>Veryifying User... - Melange Media Admin</title>
     <?php include '../templates/adminHead.php';?>
 </head>
 <body>

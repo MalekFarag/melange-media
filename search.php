@@ -29,10 +29,10 @@ include_once 'load.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php if(isset($_GET['q'])){ echo $_GET['q'].' Posts';}else{ echo 'Search';}  ?> - Productivity Guys</title>
+    <title><?php if(isset($_GET['q'])){ echo $_GET['q'].' Posts';}else{ echo 'Search';}  ?> - Melange Media</title>
     <?php include_once 'templates/head.php'; ?>
     
-    <meta name="description" content="Search posts. Learn about digital marketing, design, coding, & everything productivity. Productivity Guys blog is here to help entrepreneurs exapand their skillset and improve.">
+    <meta name="description" content="">
 </head>
 <body>
 <main id="app">

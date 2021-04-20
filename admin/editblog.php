@@ -43,7 +43,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Post - Productivy Guys Admin</title>
+    <title>Edit Post - Melange Media Admin</title>
     <?php include '../templates/adminHead.php';?>
     <script src="https://cdn.tiny.cloud/1/voc9219x8oy4p5j8ipiznuan5pifw1fv44s4ax5ors8b0v33/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 </head>

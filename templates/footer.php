@@ -7,12 +7,8 @@
             <ul class="navList">
                     <li><a href="./">Home</a></li>
 
-                    <li><a href="./articles">Articles</a></li>
-                    <!-- add categories/topics here -->
-                    <li><a href="./tutorials">Tutorials</a></li>
-                    <li><a href="./reviews">Product Reviews</a></li>
+                    <li><a href="./latest-posts">Latest Posts</a></li>
 
-                    <li><a href="./resources">Resources</a></li>
 
                     <li><a href="./about">About Us</a></li>
                     <!-- <li><a href="./contact">Contact Us</a></li> -->
@@ -32,7 +28,7 @@
     
 
 
-    <div class="copyright">Productivity Guys <?php echo date('Y');?> &copy;. All Rights Reserved. <br>
+    <div class="copyright">Melange Media <?php echo date('Y');?> &copy;. All Rights Reserved. <br>
         Website designed and developed by <a href="https://revesolutions.ca/" style='color: white;' target='_blank'>Reve Solutions</a>
     </div>
 

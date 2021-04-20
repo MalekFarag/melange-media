@@ -9,7 +9,7 @@ include_once 'load.php';
 
 
         $latest = getAllAvailable($tbl, 999);
-        $banner1 = getRandRes();
+
         
 
 ?>
@@ -22,10 +22,10 @@ include_once 'load.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Latest Posts - Productivity Guys Blog</title>
+    <title>Latest Posts - Melange Media</title>
     <?php include_once 'templates/head.php'; ?>
     
-    <meta name="description" content="Latest posts. Learn about digital marketing, design, coding, & everything productivity. Productivity Guys blog is here to help entrepreneurs exapand their skillset and improve.">
+    <meta name="description" content="">
 </head>
 <body>
 <main id="app">
@@ -84,26 +84,6 @@ include_once 'load.php';
         </div>
         <?php endif; ?>
 
-
-        <?php if($banner1->rowCount() > 0): ?>
-            <?php while ($info = $banner1->fetch(PDO::FETCH_ASSOC)): $resImg = 'images/res-images/'.$info['res_image']; ?>
-
-                <div class="banner">
-                    <div class="info">
-                        <div class="img" style='background-image: url(<?php echo $resImg; ?>);'></div>
-                        <div class="text">
-                            <h4 class="title"><?php echo $info['res_title']; ?></h4>
-                            <p class="subheader"><?php echo $info['res_subheader']; ?></p>
-                            <a href="<?php echo $info['res_link']; ?>" target='_blank' class="button1">Click Here</a>
-                        </div>
-                    </div>
-                </div>
-            <?php endwhile; ?>
-        <?php endif; ?>
-
-        <div class="formDiv" style='margin: 40px auto; margin-bottom: 0; padding-bottom: 40px; max-width: 424px;'>
-                <div class="sender-form-field" data-sender-form-id="kkubb7vc6157pteji"></div>
-            </div>
 </div>
 
 

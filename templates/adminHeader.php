@@ -36,7 +36,6 @@
             <ul class="navList">
                 <li><a href="./dashboard">Dashboard</a></li>
                 <li><a href="./createblog">Create Post</a></li>
-                <li><a href="./createresource">Create Resource</a></li>
                 <li><a href="./edituser">Edit Current Account</a></li>
                 <li><a href="./createuser">Create New Account</a></li>
                 <li><a href="./logout">Logout</a></li>

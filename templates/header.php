@@ -4,13 +4,16 @@ if(isset($_GET['search'])){
     $q = $_GET['q'];
 
 
-        redirect_to("search?q=$q");
-    
-
-    
+        redirect_to("./search?q=$q");
 }
 
+
 ?>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWWWRS7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <div class="mainHeader">
 
@@ -23,7 +26,6 @@ if(isset($_GET['search'])){
             <li><a style="background-image: url('images/icons/linkedin.svg');" class='linkedin' href="https://www.linkedin.com/company/76425555" target="_blank"></a></li>
             <li><a style="background-image: url('images/icons/facebook.svg');" class='fb' href="https://www.facebook.com/productivityguys" target="_blank"></a></li>
             <li><a style="background-image: url('images/icons/twitter.svg');" class='twitter' href="https://twitter.com/ProductivityAfl" target="_blank"></a></li>
-            <!-- <li><a class='insta' href="http://"></a></li> -->
         </ul>
 
         
@@ -49,17 +51,12 @@ if(isset($_GET['search'])){
 
         <nav class="mainNav"   v-bind:class="[isBurger ? '' : 'navOn']">
             <ul class="navList">
-                <li><a href="./articles">Articles</a></li>
-                <!-- add categories/topics here -->
-                <li><a href="./tutorials">Tutorials</a></li>
+                
+                <li><a href="./latest-posts">Latest Posts</a></li>
 
-                <li><a href="./top-5-lists">Top 5 Lists</a></li>
-                <li><a href="./reviews">Product Reviews</a></li>
-
-                <li><a href="./resources">Resources</a></li>
 
                 <li><a href="./about">About Us</a></li>
-                <!-- <li><a href="./contact">Contact Us</a></li> -->
+
             </ul>
         </nav>
 

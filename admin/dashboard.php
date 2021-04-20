@@ -30,8 +30,6 @@
         $currentFilter = 'All Posts';
     }
 
-    $getRes = getAllResouces( 99);
-
     
     
     
@@ -43,7 +41,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard - Productivy Guys Admin</title>
+    <title>Dashboard - Melange Media Admin</title>
     <?php include '../templates/adminHead.php';?>
 </head>
 <body>
@@ -67,7 +65,7 @@
 
                 <?php if($term != ''): ?>
                     <form action="dashboard" method="post">
-                        <button style='font-size: small;' class='button1'>Show All Logos</button>
+                        <button style='font-size: small;' class='button1'>Show All Posts</button>
                     </form>
                 <?php endif; ?>
 
@@ -104,38 +102,7 @@
 
                 
 
-                <div class="resDiv">
-                    <h2 class="headerL">All Resources</h2>
-                    <div class="resList">
-                    <?php while ($info = $getRes->fetch(PDO::FETCH_ASSOC)): $resImg = '../images/res-images/'.$info['res_image']; ?>
-                        <div class="resource">
-                                <div class='img' style="background-image: url('<?php echo $resImg; ?>') ; margin-right: 10px;" ></div>
-                                <div class="info">
-                                    
-                                    <h3 class="title"><?php echo $info['res_title']; ?></h3>
-                                    
-                                    <p class="subheader"><?php echo $info['res_subheader']; ?></p>
-                                    <p class="date">By <?php echo $info['res_author']; ?>. <?php $date = $info['res_date']; convertDate($date); ?></p>
-                                    <div class="options">
-                                        <div class="pub" style='display: flex; margin: 10px auto; width: fit-content;'>
-                                            <?php if($info['res_published'] == 1){
-                                                    echo 'Published <div class="img" style="background-image: url(../images/icons/done2.svg); width: 17px; height: 17px; margin-left: 4px;"></div>';
-                                                }else{
-                                                    echo 'Not Published <div class="img" style="background-image: url(../images/icons/close.svg); width: 17px; height: 17px; margin-left: 4px;"></div>';
-                                                } ?>
-                                        </div>
-                                        
-                                        <a href="editresource?id=<?php echo $info['res_id']; ?>" class="edit">Edit Resource</a>
-                                        <a href="deleteresource?id=<?php echo $info['res_id']; ?>" class="delete">Delete Resource</a>
-                                    </div>
-                                </div>
-                                
-                                
-
-                        </div>
-                        <?php endwhile; ?>
-                    </div>
-                </div>
+                
 
 
         </div>

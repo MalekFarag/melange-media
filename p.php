@@ -33,7 +33,7 @@ if (isset($_GET['id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php echo $info['blog_title']; ?> - Productivity Guys</title>
+    <title><?php echo $info['blog_title']; ?> - Melange Media</title>
     <?php include_once 'templates/head.php'; ?>
     <link rel='canonical' href='<?php echo 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>'>
     <!-- social share -->
@@ -43,9 +43,9 @@ if (isset($_GET['id'])) {
 
     <meta property="og:url"           content="<?php echo $actual_link; ?>" />
     <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="<?php echo $info['blog_title']; ?> - Productivity Guys" />
-    <meta property="og:description"   content="<?php echo $info['blog_title']; ?>. Productivity Guys." />
-    <meta property="og:image"         content="https://www.productivityguys.com/images/blog-images/<?php echo $info['blog_image']; ?>" />
+    <meta property="og:title"         content="<?php echo $info['blog_title']; ?> - Melange Media" />
+    <meta property="og:description"   content="<?php echo $info['blog_title']; ?>. Melange Media." />
+    <meta property="og:image"         content="https://www.melangemedia.com/images/blog-images/<?php echo $info['blog_image']; ?>" />
 </head>
 <body>
 <main id="app">

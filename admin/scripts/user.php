@@ -21,9 +21,9 @@ function createuser($fname, $lname, $password, $email, $ip){
                 //mail config
                 ini_set('display_errors', 1);
                 error_reporting(E_ALL);
-                $from = 'info@productivityguys.com';
+                $from = 'contact@melangemedia.ca';
                 $to = $email;
-                $subject = "Please Verify Your New Account | Manjiri Nadkarni Admin Site";
+                $subject = "Please Verify Your New Account | Melange Media Admin Site";
                 $message = "
 
 
@@ -31,7 +31,7 @@ function createuser($fname, $lname, $password, $email, $ip){
         Thank you for creating an account with us. Please verify your account by clicking the link below.
 
 
-        https://productivityguys.com/admin/verify?hash=$hash&email=$email 
+        https://melangemedia.ca/admin/verify?hash=$hash&email=$email 
 
 
 
@@ -81,9 +81,9 @@ function resendVerify($email, $hash){
     //mail config
         ini_set('display_errors', 1);
         error_reporting(E_ALL);
-        $from = 'info@productivityguys.com';
+        $from = 'contact@melangemedia.ca';
         $to = $email;
-        $subject = "Please Verify Your New Account | Manjiri Nadkarni Admin Site";
+        $subject = "Please Verify Your New Account | Melange Media Admin Site";
         $message = "
 
 
@@ -91,7 +91,7 @@ function resendVerify($email, $hash){
         Thank you for creating an account with us. Please verify your account by clicking the link below.
 
 
-        https://productivityguys.com/admin/verify?hash=$hash&email=$email 
+        https://melangemedia.ca/admin/verify?hash=$hash&email=$email 
 
 
 
@@ -243,17 +243,17 @@ function forgotPassword($email){
         //mail config
         ini_set('display_errors', 1);
         error_reporting(E_ALL);
-        $from = 'info@productivityguys.com';
+        $from = 'contact@melangemedia.ca';
         $to = $email;
-        $subject = "Reset Password Request | Manjiri Nadkarni Admin Site";
+        $subject = "Reset Password Request | Melange Media Admin Site";
         $message = "
 
 
 
-Here is your reset password link for your Manjiri Nadkarni Admin Site.
+Here is your reset password link for your Melange Media Admin Site.
 
 
-https://productivityguys.com/admin/resetpassword?hash=$hash&email=$email
+https://melangemedia.ca/admin/resetpassword?hash=$hash&email=$email
 
 
 
@@ -367,7 +367,7 @@ function verifyUser($hash, $email){
             
 
     }else{
-        return 'Nice try... Manjiri will not be hacked!';
+        return 'Nice try... Melange will not be hacked!';
     }
 
         

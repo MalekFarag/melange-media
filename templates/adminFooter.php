@@ -21,7 +21,7 @@
     </nav>
 
 
-    <div class="copyright">Productivity Guys <?php echo date('Y');?> &copy;. All Rights Reserved.</div>
+    <div class="copyright">Melange Media <?php echo date('Y');?> &copy;. All Rights Reserved.</div>
 
     
 </footer>
