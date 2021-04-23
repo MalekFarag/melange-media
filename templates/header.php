@@ -51,7 +51,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <nav class="mainNav"   v-bind:class="[isBurger ? '' : 'navOn']">
             <ul class="navList">
                 <li><a href="./">Home</a></li>
-                <li class='lastHover'><a href="./latest-posts">Latest Posts</a></li>
+                <!-- <li class='lastHover'><a href="./latest-posts">Latest Posts</a></li> -->
                 <div class="hoverList">
                     <li><a href="./art">Art</a></li>
                     <li><a href="./entertainement">Entertainment</a></li>
