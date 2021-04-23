@@ -4,9 +4,9 @@ class Database
     // Note: specify your own database credentials
     private $host = "151.106.98.0";
 
-    private $db_name = "u241638502_db_melange";
+    private $db_name = "u241638502_db_pguys";
 
-    private $username = "u241638502_melange";
+    private $username = "u241638502_pguys";
 
     private $password = "Libya100!";
 

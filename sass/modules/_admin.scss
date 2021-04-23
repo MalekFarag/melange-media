@@ -7,8 +7,9 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    background-color: white;
-    border-radius: 10px;
+    background-color: $white;
+    // border-radius: 10px;
+    color: $black;
 
     padding: 40px 10px;
 
@@ -37,12 +38,12 @@
         font-size: small;
         width: 100%;
 
-        border-radius: 3px;
+        // border-radius: 3px;
 
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: 'Oswald', sans-serif;
 
         background-color: rgb(255, 255, 255);
-        border: solid 1px rgb(211, 211, 211);
+        border: solid 1px $darkGray;
         max-width: 80%;
         margin: 0 auto;
         color: $darkGray;
@@ -58,6 +59,10 @@
         width: 60%;
         margin: 0 auto;
         margin-top: 30px;
+
+        color: $darkGray;
+            background-color: $white;
+            border: solid 2px $darkGray;
     }
 
     textarea{
@@ -138,7 +143,7 @@
 
             border-radius: 3px;
 
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: 'Oswald', sans-serif;
 
             background-color: rgb(255, 255, 255);
             border: solid 1px rgb(211, 211, 211);
@@ -201,7 +206,7 @@
         cursor: pointer;
 
         input{
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: 'Oswald', sans-serif;
             border: none;
         }
     

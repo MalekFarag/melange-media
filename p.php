@@ -14,7 +14,7 @@ if (isset($_GET['id'])) {
     $getBlog = getSingleBlog($tbl, $col, $id);
     $getRecommened = getRecommended($title, $id);
 
-    $banner1 = getRandRes();
+    // $banner1 = getRandRes();
 }else{
     redirect_to('./error');
 }
@@ -109,58 +109,39 @@ if (isset($_GET['id'])) {
                     
         </div>
     
-    <div class="content end" style='padding-top: 0;'>
+    <div class="content" style='padding-top: 0;'>
             
 
-        <h2 class="headerM">Recommended Articles For You</h2>
         
-        <div class="postList">
-                <?php while ($row = $getRecommened->fetch(PDO::FETCH_ASSOC)): $blogImg2 = 'images/blog-images/'.$row['blog_image']; ?>
-                    <a href='./p?title=<?php echo $row['blog_title']; ?>&id=<?php echo $row['blog_id']; ?>' class="post">
-                        <div class="bgimg" style="background-image: url('<?php echo $blogImg2; ?>');"></div>
-                        <div class="text">
-                            <div class="tags">
-                                <?php $tags = $row['blog_tags']; displayTags($tags);?>
+        <div class="postDiv">
+            <h2 class="secHead">Recommended For You</h2>
+            <div class="divLine"></div>
+            <div class="postList postListRow">
+                    <?php while ($row = $getRecommened->fetch(PDO::FETCH_ASSOC)): $blogImg2 = 'images/blog-images/'.$row['blog_image']; ?>
+                        <a href='./p?title=<?php echo $row['blog_title']; ?>&id=<?php echo $row['blog_id']; ?>' class="post">
+                            <div class="bgimg" style="background-image: url('<?php echo $blogImg2; ?>');"></div>
+                            <div class="text">
+                                <div class="tags">
+                                    <?php $tags = $row['blog_tags']; displayTags($tags);?>
+                                </div>
+
+                                <h3 class="title"><?php echo $row['blog_title']; ?></h3>
+                                <h4 class="subtitle"><?php echo $row['blog_subheader']; ?></h4>
+                                <p class="date"><?php $date2 = $row['blog_date']; convertDate($date2); ?></p>
                             </div>
-
-                            <h3 class="title"><?php echo $row['blog_title']; ?></h3>
-                            <h4 class="subtitle"><?php echo $row['blog_subheader']; ?></h4>
-                            <p class="date">By <?php echo $row['blog_author']; ?>. <?php $date2 = $row['blog_date']; convertDate($date2); ?></p>
-                        </div>
-                    </a>
-                <?php endwhile; ?>
-            
-        </div>
-        <a href="./latest-posts" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
-
-
-
-    </div>
-
-    
-    <div class="content">
-        <?php if($banner1->rowCount() > 0): ?>
-            <?php while ($info = $banner1->fetch(PDO::FETCH_ASSOC)): $resImg = 'images/res-images/'.$info['res_image']; ?>
-
-                <div class="banner">
-                    <div class="info">
-                        <div class="img" style='background-image: url(<?php echo $resImg; ?>);'></div>
-                        <div class="text">
-                            <h4 class="title"><?php echo $info['res_title']; ?></h4>
-                            <p class="subheader"><?php echo $info['res_subheader']; ?></p>
-                            <a href="<?php echo $info['res_link']; ?>" target='_blank' class="button1">Click Here</a>
-                        </div>
-                    </div>
-                </div>
-            <?php endwhile; ?>
-        <?php endif; ?>
-
-
-        <div class="formDiv" style='margin: 40px auto; margin-bottom: 0; padding-bottom: 40px; max-width: 424px;'>
-                <div class="sender-form-field" data-sender-form-id="kkubb7vc6157pteji"></div>
+                        </a>
+                    <?php endwhile; ?>
+                
             </div>
+            <a href="./latest-posts" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
+
+
+        </div>
+        
+
 
     </div>
+
         
         
         

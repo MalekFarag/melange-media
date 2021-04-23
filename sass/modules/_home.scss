@@ -59,11 +59,17 @@
                 padding: 15px;
                 box-sizing: border-box;
                 width: 100%;
+
+                .cat{
+                    font-size: x-small;
+                }
                 
 
                 .date{
                     margin-top: 4px;
                     // display: none;
+                    opacity: 1;
+                    font-size: x-small;
                 }
 
                 
@@ -101,11 +107,18 @@
         .secHead{
             font-size: large;
             margin: 20px auto;
-            text-align: left;
+            // text-align: left;
             box-sizing: border-box;
-            padding-left: 20px;
+            // padding-left: 20px;
 
             font-weight: bold;
+        }
+
+        .divLine{
+            width: 90vw;
+            height: 1px;
+            background-color: $primaryColor;
+            margin: 20px auto;
         }
 
         .viewMore{
@@ -125,7 +138,8 @@
                 transition: all .2s ease;
                 height: 15px;
                 width: 15px;
-                margin-left: 5px;
+                margin-left: 8px;
+                margin-top: 3px;
             }
 
             &:hover{
@@ -153,13 +167,13 @@
 
             .post{
                 overflow: visible;
-                border: solid 1px rgb(226, 226, 226);
+                // border: solid 1px $black;
                 width: 75vw;
                 max-width: 262px;
                 // max-height: none;
-                margin: 10px 8px;
+                margin: 10px 10px;
                 box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.35); 
-                border-radius: 10px; 
+                // border-radius: 10px; 
 
                 transition: all .3s ease;
                 cursor: pointer;
@@ -179,17 +193,18 @@
                 flex-direction: column;
                     .bgimg{
                         background-color: $black;
-                        height: 44vw;
-                        width: 75vw;
-                        max-width: 260px;
-                        max-height: 150px;
-                        border-radius: 10px 10px 0 0;
+                        height: 75vw;
+                        width: 44vw;
+                        max-width: 170px;
+                        max-height: 260px;
+                        // border-radius: 10px 10px 0 0;
                         background-size: cover;
                         background-position: center;
                     }
 
                 .tags{
                     padding-bottom: 5px;
+                    display: none;
                     
                     .tag{
                         color: $primaryColor;
@@ -212,12 +227,12 @@
                 .text{
                     // display: none;
                     box-sizing: border-box;
-                    padding: 15px;
+                    padding: 5px;
                     padding-top: 10px;
-                    border-radius: 10px;
+                    // border-radius: 10px;
                     
 
-                    color: rgb(36, 36, 36);
+                    color: $white;
 
                     .title{
                         line-height: 24px;
@@ -225,10 +240,38 @@
 
                     .subtitle{
                         line-height: 20px;
+                        display: none;
                     }
                 }
             }
         }
+
+
+        .postListRow{
+            flex-direction: column !important;
+            .post{
+                width: 95vw !important;
+                max-width: 400px !important;
+                margin: 15px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: nowrap !important;
+                .text{
+                    width: 60%;
+                    padding-left: 20px;
+                }
+
+            }
+        }
+    }
+
+    .adDiv{
+        width: 80vw;
+        height: 220px;
+        margin: 40px auto;
+        background-color: $black;
     }
         .post{
             box-sizing: border-box;
@@ -245,9 +288,9 @@
 
             display: flex;
             
-            color: white;
+            // color: white;
             text-decoration: none;
-            color: $black;
+            // color: $black;
 
             .bgImg{
                 background-position: center;
@@ -262,9 +305,9 @@
 
                 .date{
                     font-size: small;
-                    margin-top: 25px;
+                    margin-top: 10px;
                     opacity: .7;
-                    font-style: italic;
+                    // font-style: italic;
                 }
             }
 
@@ -287,6 +330,9 @@
             }
         }
 
+
+    
+
 }
 
 @media only screen and (min-width: 800px){
@@ -300,13 +346,18 @@
                     max-width: 1500px;
                     margin: 10px auto;
                     margin-top: auto;
+
+                    .cat{
+                        font-size: small;
+                    }
                     .title{
-                        font-size: 46px;
+                        font-size: 36px;
                         // display: none;
                     }
 
                     .date{
                         display: block;
+                        font-size: small;
                     }
 
                     .subtitle{
@@ -330,13 +381,13 @@
             .adDiv{
                 display: block;
                 border-radius: 10px;
-                background-color: rgb(245, 245, 245);
-                width: 25%;
+                background-color: $black;
+                width: 15%;
                 margin: 0;
                 margin-top: 240px;
             }
             .postDiv{
-                width: 70%;
+                width: 80%;
                 margin: 0;
                 margin-right: 30px;
             }
@@ -351,22 +402,39 @@
             margin: 60px auto;
             // padding: 60px 0px;
 
+            .secHead{
+                text-align: left;
+                max-width: 1400px;
+                width: 80%;
+                margin: 20px auto;
+
+                font-size: xx-large !important;
+            }
+
             
             .postList{
                 overflow-x: initial !important;
                 flex-wrap: wrap;
                 // width: 80vw;
                 max-width: 1500px;
+                
 
                 .post{
-                    max-width: 310px; 
+                    max-width: 220px;
+                    margin-right: 25px !important;
 
                     .bgimg{
-                        max-width: 308px;
-                        max-height: 185px;
+                        max-width: 220px;
+                        max-height: 300px;
                     }
                 }
                 
+            }
+
+            .postListRow{
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: wrap !important;
             }
 
             

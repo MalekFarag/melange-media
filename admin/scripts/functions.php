@@ -20,7 +20,7 @@ function getYTID($url){
 
 function convertDate($date){
 
-    $newDate = date("F j, Y", strtotime($date));
+    $newDate = date("d.m.Y", strtotime($date));
     echo $newDate;
 }
 

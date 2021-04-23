@@ -1,15 +1,19 @@
-$primaryColor: #5426F1;
-$darkGray: rgb(12, 12, 24);
+$primaryColor: #FFD700;
+$darkGray: rgb(0, 0, 0);
 
-$white: rgb(231, 231, 231);
-$black: #333945;
+$white: rgb(250, 250, 250);
+$black: #161616;
 
 body{
     overflow-x: hidden;
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Oswald', 'sans-serif';
 
-    background-color: $white;
-    color: $black;
+    // h1,h2,h3,h4,h5,h6{
+    //     font-family: 'Lora', 'serif';
+    // }
+
+    background-color: $darkGray;
+    color: $white;
 
     .hidden{
         display: none;
@@ -20,17 +24,16 @@ body{
         background-size: contain;
         background-repeat: no-repeat;
     }
+
+    
     
     .content{
-        background-color: white;
+        // background-color: white;
         text-align: center;
-
+    }
         form{
             input,textarea,select{
-                font-family: 'Roboto', sans-serif; 
-            }
-            button{
-                border: none !important;
+                font-family: 'Oswald', sans-serif !important; 
             }
         }
 
@@ -42,23 +45,26 @@ body{
         .italic{
             font-style: italic;
         }
+        .underline{
+            text-decoration: underline;
+        }
 
         .headerL{
             font-size: xx-large;
-            font-weight: bold;
+            // font-weight: bold;
             margin: 20px auto;
             display: block;
         }
 
         .headerM{
             font-size: x-large;
-            font-weight: bold;
+            // font-weight: bold;
             margin: 20px auto;
             display: block;
         }
         .headerS{
             font-size: large;
-            font-weight: bold;
+            // font-weight: bold;
             margin: 20px auto;
             display: block;
         }
@@ -73,31 +79,35 @@ body{
         }
 
         .button1{
-            border-radius: 8px;
-            font-weight: bold;
-            border: none;
-                    padding: 10px 12px;
-                    text-decoration: none;
+            // border-radius: 8px;
+            // font-weight: bold;
+            border: solid 2px $white;
+            padding: 7px 14px;
+            text-decoration: none;
+
+            background-color: $darkGray;
+            font-family: 'Oswald', sans-serif;
 
             display: block;
             margin: 0 auto;
 
             cursor: pointer;
 
-            color: white;
+            color: $white;
             width: fit-content;
 
-            background-color: $primaryColor;
+            
 
-            transition: all .2s ease;
+            transition: all .25s ease;
 
             &:hover{
-                background-color: #6339f0;
+                border-color: $primaryColor;
+                color: $primaryColor;
             }
         }
 
         
-    }
+    
 }
 
 

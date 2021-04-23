@@ -10,6 +10,10 @@ include_once 'load.php';
 
 
         $latest = getAllAvailable($tbl, $num);
+        $ent = getAllAvailable($tbl, $num);
+
+        // categories = 1,2,3,4,5
+        // $articles = getAllAvailableByCat($tbl, 1, $num2);
 
         
 
@@ -48,9 +52,9 @@ include_once 'load.php';
                 
 
                 <div class="text">
+                    <p class="cat underline">Featured</p>
                     <h3 class="title"><?php echo $info['blog_title']; ?></h3>
-                    <h4 class="subtitle"><?php echo $info['blog_subheader']; ?></h4>
-                    <p class="date">By <?php echo $info['blog_author']; ?>. <?php $date = $info['blog_date']; convertDate($date); ?></p>
+                    <p class="date"><?php $date = $info['blog_date']; convertDate($date); ?></p>
                 </div>
             </a>
             <?php endwhile; ?>
@@ -75,7 +79,7 @@ include_once 'load.php';
 
                         <h3 class="title"><?php echo $info['blog_title']; ?></h3>
                         <h4 class="subtitle"><?php echo $info['blog_subheader']; ?></h4>
-                        <p class="date">By <?php echo $info['blog_author']; ?>. <?php $date = $info['blog_date']; convertDate($date); ?></p>
+                        <p class="date"><?php $date = $info['blog_date']; convertDate($date); ?></p>
                     </div>
                 </a>
             <?php endwhile; ?>
@@ -85,6 +89,41 @@ include_once 'load.php';
             <a href="./latest-posts" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
         </div>
         <?php endif; ?>
+
+        <div class="adDiv"></div>
+
+
+         <!-- latest posts here 6-->
+         <?php if($ent->rowCount() > 0): ?>
+        
+        <div class="postDiv">
+            <h2 class="secHead">Entertainment</h2>
+            <div class="divLine"></div>
+            <div class="postList postListRow">
+
+            <?php while ($info = $ent->fetch(PDO::FETCH_ASSOC)): $blogImg = 'images/blog-images/'.$info['blog_image']; ?>
+                <a href='./p?title=<?php echo $info['blog_title']; ?>&id=<?php echo $info['blog_id']; ?>' class="post">
+                    <div class="bgimg" style="background-image: url('<?php echo $blogImg; ?>');"></div>
+                    <div class="text">
+                        <div class="tags">
+                            <?php $tags = $info['blog_tags']; displayTags($tags);?>
+                        </div>
+
+                        <h3 class="title"><?php echo $info['blog_title']; ?></h3>
+                        <h4 class="subtitle"><?php echo $info['blog_subheader']; ?></h4>
+                        <p class="date"><?php $date = $info['blog_date']; convertDate($date); ?></p>
+                    </div>
+                </a>
+            <?php endwhile; ?>
+
+            </div>
+
+            <a href="./latest-posts" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
+        </div>
+        <?php endif; ?>
+
+
+        
         
         
 </div>
