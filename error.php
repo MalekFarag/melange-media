@@ -50,14 +50,14 @@ include_once 'load.php';
                         <div class="text">
                             <h3 class="title"><?php echo $info['blog_title']; ?></h3>
                             <h4 class="subtitle"><?php echo $info['blog_subheader']; ?></h4>
-                            <p class="date">By <?php echo $info['blog_author']; ?>. <?php $date = $info['blog_date']; convertDate($date); ?></p>
+                            <p class="date"><?php $date = $info['blog_date']; convertDate($date); ?></p>
                         </div>
                     </a>
                 <?php endwhile; ?>
                 </div>
             </div>
 
-            <span class='italic'><a href="./">Or you can to go back to the main site by clicking here</a></span>
+            <span class='italic'><a href="./" style='color: gold;'>Or you can to go back to the main site by clicking here</a></span>
         </div>
         
 
