@@ -59,19 +59,18 @@
             <form class='form' action="editblog?id=<?php echo $id ; ?>" method="post" enctype='multipart/form-data' style='max-width: 900px;'>
                 <h2 class='headerM'>Edit Post</h2>
                 <?php while($info = $getBlog->fetch(PDO::FETCH_ASSOC)): $blogImg = '../images/blog-images/'.$info['blog_image'];?>
-                    <label for="">Title</label>
-                    <input type="text" name='title' value="<?php echo $info['blog_title']; ?>" maxlength='256' required>
-                    
-                    <label for="">Author</label>
-                    <input type="text" name='author' value="<?php echo $info['blog_author']; ?>" maxlength='64' required>
+                <label for="">Title <br><span style='font-size: x-small;'>Do not use here: #</span></label>
+                <input type="text" name='title' maxlength='256' required>
+                
+                <label for="">Author</label>
+                <input type="text" name='author' maxlength='64' required>
 
-                    <label for="">Subheader</label>
-                    <input type="text" name='subheader' maxlength='256' value="<?php echo $info['blog_subheader']; ?>" required>
+                <!-- <label for="">Subheader</label> -->
+                <input type="hidden" name='subheader' maxlength='256' required>
 
 
-                    <label for="">Date</label>
-                    <input type="date" name="date" value="<?php echo $info['blog_date']; ?>" maxlength='128' required>
-
+                <label for="">Date</label>
+                <input type="date" name="date" required>
                     
 
                     <label for="">Blog Category</label>
@@ -88,7 +87,7 @@
 
                     <div class='img thumbnail' style="background-image: url('<?php echo $blogImg; ?>') ;" ></div>
                     
-                    <label for=""  required>Post Header Image Upload</label>
+                    <label for=""  required>Thumbnail Image Upload</label>
                     <input type="file" name="image" id="image">
 
 
@@ -106,7 +105,7 @@
                             tinycomments_mode: 'embedded',
                             tinycomments_author: 'Author name',
                             font_formats:
-                            "Roboto=Roboto; Arial=arial,helvetica,sans-serif; Arial Black=arial black,Comic Sans MS=comic sans ms,sans-serif; Courier New=courier new,courier; Georgia=georgia,palatino; Helvetica=helvetica; Impact=impact,chicago; Times New Roman=times new roman,times;  Verdana=verdana,geneva;",
+                            "Oswald=Oswald; Lora=Lora; Arial=arial,helvetica,sans-serif; Arial Black=arial black,Comic Sans MS=comic sans ms,sans-serif; Courier New=courier new,courier; Georgia=georgia,palatino; Helvetica=helvetica; Impact=impact,chicago; Times New Roman=times new roman,times;  Verdana=verdana,geneva;",
 
                         });
 

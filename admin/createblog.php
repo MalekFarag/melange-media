@@ -69,15 +69,15 @@ if(isset($_POST['post_blog'])){
             <!-- use enctype multipart/form-data for upload files -->
             <form class='form' action="createblog" method="post" enctype='multipart/form-data' style='max-width: 900px;'>
                 <h2 class='headerM'>Create Post</h2>
-                <p class="description">Do not use here: # </p>
-                <label for="">Title</label>
+                
+                <label for="">Title <br><span style='font-size: x-small;'>Do not use here: #</span></label>
                 <input type="text" name='title' maxlength='256' required>
                 
                 <label for="">Author</label>
                 <input type="text" name='author' maxlength='64' required>
 
-                <label for="">Subheader</label>
-                <input type="text" name='subheader' maxlength='256' required>
+                <!-- <label for="">Subheader</label> -->
+                <input type="hidden" name='subheader' maxlength='256' required>
 
 
                 <label for="">Date</label>
@@ -97,7 +97,7 @@ if(isset($_POST['post_blog'])){
                 <input type="text" name='tags' class="text" maxlength='256'>
 
                 <!-- file upload needs config -->
-                <label for="">Post Header Image Upload</label>
+                <label for="">Thumbnail Image Upload</label>
                 <input type="file" name="image" id="image">
 
 
@@ -115,15 +115,15 @@ if(isset($_POST['post_blog'])){
                             tinycomments_mode: 'embedded',
                             tinycomments_author: 'Author name',
                             font_formats:
-                            "Roboto=Roboto; Arial=arial,helvetica,sans-serif; Arial Black=arial black,Comic Sans MS=comic sans ms,sans-serif; Courier New=courier new,courier; Georgia=georgia,palatino; Helvetica=helvetica; Impact=impact,chicago; Times New Roman=times new roman,times;  Verdana=verdana,geneva;",
+                            "Oswald=Oswald; Lora=Lora; Arial=arial,helvetica,sans-serif; Arial Black=arial black,Comic Sans MS=comic sans ms,sans-serif; Courier New=courier new,courier; Georgia=georgia,palatino; Helvetica=helvetica; Impact=impact,chicago; Times New Roman=times new roman,times;  Verdana=verdana,geneva;",
 
                         });
 
                     
                     </script>
 
-                <label for="">Embed YouTube Video?</label>
-                <input type="text" name='videoLink'>
+                <!-- <label for="">Embed YouTube Video?</label> -->
+                <input type="hidden" name='videoLink'>
 
                 <label for="">Link for Button at End of The Post</label>
                 <input type="text" name='buttonLink'>
