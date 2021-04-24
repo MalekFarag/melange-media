@@ -77,10 +77,15 @@
             margin: 0 auto;
             padding: 5px 15px;
             .mainLogo{
-                background-image: url('../images/brand/logo-hor-text.svg');
-                height: 35px;
-                width: 160px;
+                // background-image: url('../images/brand/logo-hor-text.svg');
+                // height: 35px;
+                // width: 160px;
                 cursor: pointer;
+                color: white;
+                text-decoration: none;
+                font-size: x-large;
+                position: relative;
+                top: -2px;
                 
             }
 
@@ -266,6 +271,43 @@
         }
     }
 
+    .categoryFloat{
+        position: fixed;
+        top: 69px;
+        left: 0;
+        width: 100vw;
+        // height: 20px;
+        
+        background-color: $darkGray;
+
+        .list{
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            overflow-x: scroll;
+            margin: 0;
+            padding: 0;
+
+            li{
+                padding: 4px 15px;
+                padding-top: 0;
+                font-size: medium;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    padding: 5px 5px;
+
+                    transition: all .2s ease;
+
+                    &:hover{
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -276,11 +318,17 @@
     }
     .mainHeader{
         top: 0;
+        box-sizing: border-box;
+        padding: 0 20px;
 
         .topBar{
             .social{
                 margin-right: 20px;
             }
+        }
+
+        .categoryFloat{
+            display: none;
         }
         
 
@@ -291,11 +339,15 @@
             box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
 
             .logoBurger{
-                width: 200px;
+                // width: 200px;
                 // padding: 10px;
                 margin: 0;
-                background-color: white;
+                // background-color: white;
                 box-shadow: none;
+
+                .mainLogo{
+                    font-size: xx-large;
+                }
             }
 
             .burger{
@@ -305,6 +357,7 @@
             .searchIcon{
                 // order: 1;
                 margin-left: 10px;
+                display: none;
 
                 transition: all .2s ease;
 

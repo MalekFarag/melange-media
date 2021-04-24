@@ -117,7 +117,8 @@
         .divLine{
             width: 90vw;
             height: 1px;
-            background-color: $primaryColor;
+            background: rgb(255,215,0);
+background: linear-gradient(114deg, rgba(255,215,0,1) 0%, rgba(255,231,100,1) 100%);
             margin: 20px auto;
         }
 

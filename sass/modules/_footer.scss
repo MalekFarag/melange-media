@@ -1,7 +1,8 @@
 .footer{
     
-    padding: 60px 20px;
+    padding: 60px 0px;
     padding-bottom: 0;
+    
 
     .footLogo{
         height: 60px;
@@ -15,9 +16,11 @@
     text-align: center;
 
     .footNav{
+        padding: 0 20px;
+        border-bottom: solid 1px $primaryColor;
         .navList{
 
-            border-bottom: solid 1px $primaryColor;
+            
 
             .lastHover{
                 margin-bottom: 0px;
@@ -160,8 +163,9 @@
             
 
             .footNav{
+                border-bottom: none !important;
                 .navList{
-                    border-bottom: none !important;
+                    
                     display: flex;
                     justify-content: flex-start;
 

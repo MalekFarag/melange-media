@@ -1,3 +1,4 @@
+
 <footer class="footer">
 
     <div class="footLogo img"></div>
@@ -7,18 +8,18 @@
             <ul class="navList">
                 <li><a href="./">Home</a></li>
                 <!-- <li class='lastHover'><a href="./latest-posts">Latest Posts</a></li> -->
-                <div class="hoverList">
+                <!-- <div class="hoverList"> -->
                     <li><a href="./art">Art</a></li>
                     <li><a href="./entertainement">Entertainment</a></li>
                     <li><a href="./food">Food</a></li>
                     <li><a href="./lifestyle">Lifestyle</a></li>
                     <li><a href="./local">Local</a></li>
-                </div>
+                <!-- </div> -->
                 
                 
 
                 <li><a href="./about">About Us</a></li>
-                <!-- <li><a href="./contact">Contact Us</a></li> -->
+                <li><a href="./contact">Contact Us</a></li>
             </ul>
         </nav>
 

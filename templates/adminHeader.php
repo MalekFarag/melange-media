@@ -12,7 +12,7 @@
         <div class="logoBurger">
 
             <!-- logo -->
-            <a  href="./dashboard" class="img mainLogo"></a>
+            <a  href="./dashboard" class="img mainLogo">Melange</a>
 
 
             <div @click='toggleBurger()' class='burger'  v-bind:class="[isBurger ? '' : 'burgerOn']">

@@ -42,7 +42,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- logo -->
-            <a href='./' class="img mainLogo"></a>
+            <a href='./' class="img mainLogo">Melange</a>
 
             <!-- search for article -->
             <div @click='openSearch()' class='searchIcon img'></div>
@@ -52,13 +52,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <ul class="navList">
                 <li><a href="./">Home</a></li>
                 <!-- <li class='lastHover'><a href="./latest-posts">Latest Posts</a></li> -->
-                <div class="hoverList">
+                <!-- <div class="hoverList"> -->
                     <li><a href="./art">Art</a></li>
                     <li><a href="./entertainement">Entertainment</a></li>
                     <li><a href="./food">Food</a></li>
                     <li><a href="./lifestyle">Lifestyle</a></li>
                     <li><a href="./local">Local</a></li>
-                </div>
+                <!-- </div> -->
                 
 
                 <li><a href="./about">About Us</a></li>
@@ -73,6 +73,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
         
         
+    </div>
+
+    <div class="categoryFloat">
+        <ul class="list">
+                    <li><a href="./art">Art</a></li>
+                    <li><a href="./entertainement">Entertainment</a></li>
+                    <li><a href="./food">Food</a></li>
+                    <li><a href="./lifestyle">Lifestyle</a></li>
+                    <li><a href="./local">Local</a></li>
+        </ul>
     </div>
 
 </div>
