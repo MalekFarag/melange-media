@@ -14,6 +14,8 @@ if (isset($_GET['id'])) {
     $getBlog = getSingleBlog($tbl, $col, $id);
     $getRecommened = getRecommended($title, $id);
 
+
+
     // $banner1 = getRandRes();
 }else{
     redirect_to('./error');
@@ -55,22 +57,30 @@ if (isset($_GET['id'])) {
     <div class="articlePage">
 
         <div class="articleDiv">
-
+                                
                         <div class="article">
+
+                            <?php  if(!empty($info['blog_image'])): ?>
+                                    <div class="headImg img" style="background-image: url('<?php echo $blogImg; ?>');"></div>
+                                <?php endif; ?>
 
                             <?php  if(!empty($info['blog_tags'])): ?>
                                 <div class="tags">
                                     <?php $tags = $info['blog_tags']; displayTags2($tags);?>
                                 </div>
                             <?php endif; ?>
+
+                            <div class="catDate">
+                                <span class="cat"><?php getCategory($info['blog_category']); ?></span> <span class="date"><?php $date = $info['blog_date']; convertDate($date); ?></span>
+                            </div>
                             
                             <h2 class='headerL'><?php echo $info['blog_title']; ?></h2>
                             
-                            <h3 class="headerS" style='font-size: small; opacity: .8;'>By <?php echo $info['blog_author']; ?>. <?php $date = $info['blog_date']; convertDate($date); ?></h3>
+                            <h3 class="headerS">By <?php echo $info['blog_author']; ?></h3>
                             
-                            <div class="shareDiv">
+                            <!-- <div class="shareDiv">
                                 <div class="sharethis-inline-share-buttons"></div>
-                            </div>
+                            </div> -->
 
                             <div class="divLine"></div>
 

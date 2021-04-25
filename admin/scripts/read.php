@@ -172,3 +172,14 @@ function getBlogsByCategory($args)
     }
 }
 
+
+function getCategory($num){
+    $pdo = Database::getInstance()->getConnection();
+    
+
+    $cats = ['Art', 'Entertainement', 'Food', 'Lifestyle', 'Local'];
+
+    echo $cats[$num - 2];
+
+
+}

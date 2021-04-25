@@ -60,17 +60,17 @@
                 <h2 class='headerM'>Edit Post</h2>
                 <?php while($info = $getBlog->fetch(PDO::FETCH_ASSOC)): $blogImg = '../images/blog-images/'.$info['blog_image'];?>
                 <label for="">Title <br><span style='font-size: x-small;'>Do not use here: #</span></label>
-                <input type="text" name='title' maxlength='256' required>
+                <input type="text" name='title' value="<?php echo $info['blog_title'] ?>" maxlength='256' required>
                 
                 <label for="">Author</label>
-                <input type="text" name='author' maxlength='64' required>
+                <input type="text" name='author' value="<?php echo $info['blog_author'] ?>" maxlength='64' required>
 
                 <!-- <label for="">Subheader</label> -->
                 <input type="hidden" name='subheader' maxlength='256' required>
 
 
                 <label for="">Date</label>
-                <input type="date" name="date" required>
+                <input type="date" value="<?php echo $info['blog_date'] ?>" name="date" required>
                     
 
                     <label for="">Blog Category</label>
@@ -92,14 +92,14 @@
 
 
                     <label for="">Blog Body</label>
-                    <textarea style='min-height: 500px;' name="body"><?php echo $info['blog_body']; ?></textarea>
+                    <textarea style='min-height: 500px; width: 100%;' name="body"><?php echo $info['blog_body']; ?></textarea>
 
                     <script>
                             tinymce.init({
                             selector: 'textarea',
                             plugins: ' autolink lists media table autoresize image link advlist charmap code',
                             toolbar: 'undo redo | styleselect | forecolor | bold italic | alignleft aligncenter alignright alignjustify | outdent indent | link image  tablenumlist bullist lists advlist charmap | code',
-                            toolbar_mode: 'floating',
+                            // toolbar_mode: 'floating',
                             image_dimensions: false,
                             // toolbar_sticky: true,
                             tinycomments_mode: 'embedded',
@@ -112,8 +112,8 @@
                     
                     </script>
 
-                    <label for="">Embed YouTube Video?</label>
-                    <input type="text" name='videoLink' value="<?php echo $info['blog_yt_video']; ?>">
+                    <!-- <label for="">Embed YouTube Video?</label> -->
+                    <input type="hidden" name='videoLink' value="<?php echo $info['blog_yt_video']; ?>">
 
                     <label for="">Link for Button at End of The Post</label>
                     <input type="text" name='buttonLink' value="<?php echo $info['blog_end_link']; ?>">

@@ -102,14 +102,14 @@ if(isset($_POST['post_blog'])){
 
 
                 <label for="">Blog Body</label>
-                    <textarea style='min-height: 500px;' name="body"></textarea>
+                    <textarea style='min-height: 500px; width: 100%;' name="body"></textarea>
 
                     <script>
                             tinymce.init({
                             selector: 'textarea',
                             plugins: ' autolink lists media table autoresize image link advlist charmap code',
                             toolbar: 'undo redo | styleselect | forecolor | bold italic | alignleft aligncenter alignright alignjustify | outdent indent | link image  tablenumlist bullist lists advlist charmap | code',
-                            toolbar_mode: 'floating',
+                            // toolbar_mode: 'floating',
                             image_dimensions: false,
                             // toolbar_sticky: true,
                             tinycomments_mode: 'embedded',

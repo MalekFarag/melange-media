@@ -3,12 +3,15 @@
 include_once 'load.php';
 
         $tbl = 'tbl_blog';
+        $cat = 3;
 
 
-        $hero = getAllAvailable($tbl, 1);
 
+        $hero = getAllAvailableByCat($tbl, $cat, 1);
 
-        $latest = getAllAvailable($tbl, 999);
+        // categories = 2,3,4,5,6
+        $latest = getAllAvailableByCat($tbl, $cat, 999);
+
 
         
 
@@ -22,14 +25,14 @@ include_once 'load.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Latest Posts - Melange Media</title>
+    <title>Food - Melange Media</title>
     <?php include_once 'templates/head.php'; ?>
     
     <meta name="description" content="">
 </head>
 <body>
 <main id="app">
-<h1 class="hidden">Latest Posts</h1>
+<h1 class="hidden">Food</h1>
 
 
 
@@ -59,11 +62,11 @@ include_once 'load.php';
 
 
 
-        <!-- latest posts here 6-->
+        <!-- Food here 6-->
         <?php if($latest->rowCount() > 0): ?>
         
         <div class="postDiv">
-            <h2 class="secHead">Recently Added</h2>
+            <h2 class="secHead">Food</h2>
             <div class="divLine"></div>
             <div class="postList postListRow">
 

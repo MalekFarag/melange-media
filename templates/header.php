@@ -54,7 +54,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <!-- <li class='lastHover'><a href="./latest-posts">Latest Posts</a></li> -->
                 <!-- <div class="hoverList"> -->
                     <li><a href="./art">Art</a></li>
-                    <li><a href="./entertainement">Entertainment</a></li>
+                    <li><a href="./entertainment">Entertainment</a></li>
                     <li><a href="./food">Food</a></li>
                     <li><a href="./lifestyle">Lifestyle</a></li>
                     <li><a href="./local">Local</a></li>
