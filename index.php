@@ -241,7 +241,6 @@ include_once 'load.php';
                     </div>
                 </a>
             <?php endwhile; ?>
-
             </div>
 
             <a href="./lifestyle" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
