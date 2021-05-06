@@ -112,7 +112,18 @@ if (isset($_GET['id'])) {
                             
                         </div>
 
-                        <div class="adDiv"></div>
+                        <div class="adDiv">
+                            <ul class="list">
+                            <li class='cat'>Categories</li>
+                            <li><a href="./art">Art</a></li>
+                            <li><a href="./entertainment">Entertainment</a></li>
+                            <li><a href="./food">Food</a></li>
+                            <li><a href="./lifestyle">Lifestyle</a></li>
+                            <li><a href="./local">Local</a></li>      
+                                
+                            </ul>
+
+                        </div>
 
                         
 

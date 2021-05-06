@@ -22,7 +22,7 @@ include_once 'load.php';
     <title>Thank You - Melange Media</title>
     <?php include_once 'templates/head.php'; ?>
     
-    <meta name="description" content="Productivity. Learn More.">
+    <!-- <meta name="description" content="Productivity. Learn More."> -->
 </head>
 <body>
 <main id="app">

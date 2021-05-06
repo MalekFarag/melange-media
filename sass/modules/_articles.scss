@@ -243,7 +243,39 @@
                     background-color: $black;
                     width: 20%;
                     margin: 0;
-                    margin-top: 290px;
+                    // margin-top: 290px;
+
+                    .list{
+                        position: sticky;
+                        top: 100px;
+                        padding: 10px 20px;
+                        list-style: none;
+                        .cat{
+                            padding-bottom: 15px;
+                            margin-bottom: 15px;
+                            border-bottom: solid 1px white;
+                            color: white;
+                        }
+
+                        li{
+                            font-size: large;
+                            margin: 0px 0;
+                        }
+
+                        a{
+                            
+                            color: white;
+                            text-decoration: none;
+                            // padding-bottom: 100px;
+                            
+
+                            transition: all .2s ease;
+
+                            &:hover{
+                                color: $primaryColor;
+                            }
+                        }
+                    }
                 }
                 .article{
                     width: 75%;

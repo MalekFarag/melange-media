@@ -25,7 +25,7 @@ include_once 'load.php';
     <title><?php if(isset($_GET['t'])){ echo $_GET['t'].' Posts';}else{ echo 'Search';}  ?> - Productivity Guys</title>
     <?php include_once 'templates/head.php'; ?>
     
-    <meta name="description" content="Search by tags. Learn about digital marketing, design, coding, & everything productivity. Productivity Guys blog is here to help entrepreneurs exapand their skillset and improve.">
+    <!-- <meta name="description" content="Search by tags. Learn about digital marketing, design, coding, & everything productivity. Productivity Guys blog is here to help entrepreneurs exapand their skillset and improve."> -->
 </head>
 <body>
 <main id="app">

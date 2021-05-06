@@ -28,7 +28,7 @@ include_once 'load.php';
     <title>Local - Melange Media</title>
     <?php include_once 'templates/head.php'; ?>
     
-    <meta name="description" content="">
+    <!-- <meta name="description" content=""> -->
 </head>
 <body>
 <main id="app">

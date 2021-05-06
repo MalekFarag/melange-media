@@ -33,7 +33,7 @@ include_once 'load.php';
     <title>Melange Media</title>
     <?php include_once 'templates/head.php'; ?>
     
-    <meta name="description" content="">
+    <!-- <meta name="description" content=""> -->
 </head>
 <body>
 <main id="app">
@@ -94,7 +94,7 @@ include_once 'load.php';
         </div>
         <?php endif; ?>
 
-        <div class="adDiv"></div>
+        <!-- <div class="adDiv"></div> -->
 
 
         <!-- latest posts here 6-->
@@ -159,7 +159,7 @@ include_once 'load.php';
 
         <!-- latest posts here 6-->
         <?php if($ent->rowCount() > 0): ?>
-            <div class="adDiv"></div>
+            <!-- <div class="adDiv"></div> -->
         
         <div class="postDiv">
             <h2 class="secHead">Entertainment</h2>
@@ -191,7 +191,7 @@ include_once 'load.php';
 
         <!-- latest posts here 6-->
         <?php if($food->rowCount() > 0): ?>
-            <div class="adDiv"></div>
+            <!-- <div class="adDiv"></div> -->
         <div class="postDiv">
             <h2 class="secHead">Food</h2>
             <div class="divLine"></div>
