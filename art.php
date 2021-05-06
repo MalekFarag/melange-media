@@ -57,6 +57,7 @@ include_once 'load.php';
                 </div>
             </a>
             <?php endwhile; ?>
+            
         </div>
         <?php endif; ?>
 

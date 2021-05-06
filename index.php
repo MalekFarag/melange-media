@@ -11,12 +11,13 @@ include_once 'load.php';
 
         $latest = getAllAvailable($tbl, $num);
 
-        // categories = 2,3,4,5,6
+        // categories = 2,3,4,5,1
+
         $art = getAllAvailableByCat($tbl, 2, $num2);
         $ent = getAllAvailableByCat($tbl, 3, $num2);
         $food = getAllAvailableByCat($tbl, 4, $num2);
         $lifestyle = getAllAvailableByCat($tbl, 5, $num2);
-        $local = getAllAvailableByCat($tbl, 6, $num2);
+        $local = getAllAvailableByCat($tbl, 1, $num2);
 
         
 
@@ -105,7 +106,7 @@ include_once 'load.php';
             <div class="divLine"></div>
             <div class="postList postListRow">
 
-            <?php while ($info = $ent->fetch(PDO::FETCH_ASSOC)): $blogImg = 'images/blog-images/'.$info['blog_image']; ?>
+            <?php while ($info = $art->fetch(PDO::FETCH_ASSOC)): $blogImg = 'images/blog-images/'.$info['blog_image']; ?>
                 <a href='./p?title=<?php echo $info['blog_title']; ?>&id=<?php echo $info['blog_id']; ?>' class="post">
                     <div class="bgimg" style="background-image: url('<?php echo $blogImg; ?>');"></div>
                     <div class="text">
@@ -122,7 +123,7 @@ include_once 'load.php';
 
             </div>
 
-            <a href="./latest-posts" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
+            <a href="./art" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
         </div>
         <?php endif; ?>
 
@@ -134,7 +135,7 @@ include_once 'load.php';
             <div class="divLine"></div>
             <div class="postList postListRow">
 
-            <?php while ($info = $ent->fetch(PDO::FETCH_ASSOC)): $blogImg = 'images/blog-images/'.$info['blog_image']; ?>
+            <?php while ($info = $local->fetch(PDO::FETCH_ASSOC)): $blogImg = 'images/blog-images/'.$info['blog_image']; ?>
                 <a href='./p?title=<?php echo $info['blog_title']; ?>&id=<?php echo $info['blog_id']; ?>' class="post">
                     <div class="bgimg" style="background-image: url('<?php echo $blogImg; ?>');"></div>
                     <div class="text">
@@ -151,7 +152,7 @@ include_once 'load.php';
 
             </div>
 
-            <a href="./latest-posts" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
+            <a href="./local" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
         </div>
         <?php endif; ?>
 
@@ -165,7 +166,7 @@ include_once 'load.php';
             <h2 class="secHead">Entertainment</h2>
             <div class="postList">
 
-            <?php while ($info = $latest->fetch(PDO::FETCH_ASSOC)): $blogImg = 'images/blog-images/'.$info['blog_image']; ?>
+            <?php while ($info = $ent->fetch(PDO::FETCH_ASSOC)): $blogImg = 'images/blog-images/'.$info['blog_image']; ?>
                 <a href='./p?title=<?php echo $info['blog_title']; ?>&id=<?php echo $info['blog_id']; ?>' class="post">
                     <div class="bgimg" style="background-image: url('<?php echo $blogImg; ?>');"></div>
                     <div class="text">
@@ -182,7 +183,7 @@ include_once 'load.php';
 
             </div>
 
-            <a href="./latest-posts" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
+            <a href="./entertainment" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
         </div>
         <?php endif; ?>
 
@@ -197,7 +198,7 @@ include_once 'load.php';
             <div class="divLine"></div>
             <div class="postList postListRow">
 
-            <?php while ($info = $ent->fetch(PDO::FETCH_ASSOC)): $blogImg = 'images/blog-images/'.$info['blog_image']; ?>
+            <?php while ($info = $food->fetch(PDO::FETCH_ASSOC)): $blogImg = 'images/blog-images/'.$info['blog_image']; ?>
                 <a href='./p?title=<?php echo $info['blog_title']; ?>&id=<?php echo $info['blog_id']; ?>' class="post">
                     <div class="bgimg" style="background-image: url('<?php echo $blogImg; ?>');"></div>
                     <div class="text">
@@ -214,7 +215,7 @@ include_once 'load.php';
 
             </div>
 
-            <a href="./latest-posts" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
+            <a href="./food" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
         </div>
         <?php endif; ?>
 
@@ -226,7 +227,7 @@ include_once 'load.php';
             <div class="divLine"></div>
             <div class="postList postListRow">
 
-            <?php while ($info = $ent->fetch(PDO::FETCH_ASSOC)): $blogImg = 'images/blog-images/'.$info['blog_image']; ?>
+            <?php while ($info = $lifestyle->fetch(PDO::FETCH_ASSOC)): $blogImg = 'images/blog-images/'.$info['blog_image']; ?>
                 <a href='./p?title=<?php echo $info['blog_title']; ?>&id=<?php echo $info['blog_id']; ?>' class="post">
                     <div class="bgimg" style="background-image: url('<?php echo $blogImg; ?>');"></div>
                     <div class="text">
@@ -243,7 +244,7 @@ include_once 'load.php';
 
             </div>
 
-            <a href="./latest-posts" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
+            <a href="./lifestyle" class="viewMore">View More <div class="img" style="background-image: url('images/icons/arrow-right.svg');"></div></a>
         </div>
         <?php endif; ?>
 

@@ -3,7 +3,7 @@
 include_once 'load.php';
 
         $tbl = 'tbl_blog';
-        $cat = 6;
+        $cat = 1;
 
 
 
@@ -57,16 +57,17 @@ include_once 'load.php';
                 </div>
             </a>
             <?php endwhile; ?>
+            
         </div>
         <?php endif; ?>
 
 
 
-        <!-- Local here 6-->
+        <!-- Art here 6-->
         <?php if($latest->rowCount() > 0): ?>
         
         <div class="postDiv">
-            <h2 class="secHead">Art</h2>
+            <h2 class="secHead">Local</h2>
             <div class="divLine"></div>
             <div class="postList postListRow">
 
