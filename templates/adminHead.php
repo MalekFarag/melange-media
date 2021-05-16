@@ -1,7 +1,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 <!-- favicon -->
-<link rel="shortcut icon" href="../favicon.svg" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 
 <!-- Google fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com">

@@ -42,7 +42,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- logo -->
-            <a href='./' class="img mainLogo">Melange</a>
+            <a href='./' class="img mainLogo">
+                <div class="img logoImg"></div>
+                Melange Media
+            </a>
 
             <!-- search for article -->
             <div @click='openSearch()' class='searchIcon img'></div>

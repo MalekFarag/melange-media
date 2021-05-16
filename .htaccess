@@ -10,16 +10,16 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 # www to non-www
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.melangemedia.ca [NC]
-RewriteRule ^(.*)$ https://melangemedia.ca/$1 [L,R=301]
+#RewriteEngine On
+#RewriteCond %{HTTP_HOST} ^www.melangemedia.ca [NC]
+#RewriteRule ^(.*)$ https://melangemedia.ca/$1 [L,R=301]
 
 
 # force SSL
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.melangemedia.ca/$1 [R,L]
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^melangemedia\.ca [NC]
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.melangemedia.ca/$1 [R,L]
+#RewriteEngine On
+#RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://www.melangemedia.ca/$1 [R,L]
+#RewriteEngine On
+#RewriteCond %{HTTP_HOST} ^melangemedia\.ca [NC]
+#RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://www.melangemedia.ca/$1 [R,L]

@@ -32,7 +32,7 @@
                 
                 <?php echo !empty($message)? $message: ''; ?>
                 <form class='form' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                <div class="img" style='background-image: url(../images/brand/logo-icon.svg); height: 50px; width: 100%; margin: 0px auto;'></div>
+                <div class="img" style='background-image: url(../images/brand/logo.png); height: 50px; width: 100%; margin: 0px auto;'></div>
 
                     <h2 class='headerM'>Login Page</h2>
                     <label for="email">Email:</label>
