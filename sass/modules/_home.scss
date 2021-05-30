@@ -207,10 +207,10 @@ background: linear-gradient(114deg, rgba(255,215,0,1) 0%, rgba(255,231,100,1) 10
 
                 .tags{
                     padding-bottom: 5px;
-                    display: none;
+                    // display: none; 
                     
                     .tag{
-                        color: $primaryColor;
+                        color: gold;
                         font-size: small;
                         font-weight: bold;
                         padding-right: 8px;

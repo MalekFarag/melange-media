@@ -30,7 +30,7 @@ include_once 'load.php';
         <h2 class="headerL" style='margin-top: 0; padding-top: 120px;'>What is Melange?</h2>
 
         <div class="info">
-            <div class="img" style="background-image: url('images/brand/logo-ver-text.svg');"></div>
+            <div class="img" style="background-image: url('images/brand/logo.png');"></div>
             <div class="text">
                 <h3 class="headerM">Our Mission</h3>
                 <p class="description">To give a voice to the people & strengthen the community through the melange
@@ -40,8 +40,8 @@ include_once 'load.php';
 
 
 
-        <div class="forms">
-            <form action="about" class="form" method='post'>    
+        <div class="contactDiv">
+            <form action="about" class="contactForm" method='post'>    
                 <h2 class="headerM">Contact Us</h2>
                 <!-- <p class="description">Have a question? Feel free to send it to us. We're here to help :)</p> -->
 

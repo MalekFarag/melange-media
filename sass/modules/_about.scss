@@ -47,3 +47,57 @@
         }
     }
 }
+
+
+
+.contactDiv{
+    background-image: url('../images/bgContact.jpg');
+    background-size: cover;
+    background-position: center;
+
+    min-height: 75vh;
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .contactForm{   
+        max-width: 370px;
+
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .headerM{
+            font-weight: bold;
+            width: 100%;
+            font-size: xx-large;
+        }
+
+        label{
+            margin-top: 10px;
+        }
+
+        input, textarea{
+            width: 100%;
+            padding: 10px 8px;
+            color: white;
+            margin: 10px 0;
+
+            background-color: rgba(0, 0, 0, 0.1);
+            border: none;
+            border-bottom: solid 2px white;
+        }
+
+        textarea{
+            min-height: 100px;
+        }
+
+
+        button{
+            background-color: rgba(0, 0, 0, 0.26);
+        }
+    }
+}

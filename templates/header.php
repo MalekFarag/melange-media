@@ -44,7 +44,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- logo -->
             <a href='./' class="img mainLogo">
                 <div class="img logoImg"></div>
-                Melange Media
+                Melange
             </a>
 
             <!-- search for article -->
