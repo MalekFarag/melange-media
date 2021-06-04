@@ -119,8 +119,8 @@
         .divLine{
             width: 90vw;
             height: 1px;
-            background: rgb(255,215,0);
-background: linear-gradient(114deg, rgba(255,215,0,1) 0%, rgba(255,231,100,1) 100%);
+            background: #caa55c;
+// background: linear-gradient(114deg, rgba(255,215,0,1) 0%, rgba(255,231,100,1) 100%);
             margin: 20px auto;
         }
 
@@ -210,7 +210,7 @@ background: linear-gradient(114deg, rgba(255,215,0,1) 0%, rgba(255,231,100,1) 10
                     // display: none; 
                     
                     .tag{
-                        color: gold;
+                        color: $primaryColor;
                         font-size: small;
                         font-weight: bold;
                         padding-right: 8px;

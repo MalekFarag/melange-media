@@ -39,7 +39,7 @@ if (isset($_GET['id'])) {
     <?php include_once 'templates/head.php'; ?>
     <link rel='canonical' href='<?php echo 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>'>
     <!-- social share -->
-    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=60187e4603ca8f0018e4839a&product=inline-share-buttons" async="async"></script>
+    <!-- <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=60187e4603ca8f0018e4839a&product=inline-share-buttons" async="async"></script> -->
 
     <meta name="description" content="<?php echo $info['blog_subheader']; ?>">
 

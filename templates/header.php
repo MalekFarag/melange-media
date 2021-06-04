@@ -42,8 +42,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- logo -->
-            <a href='./' class="img mainLogo">
-                <div class="img logoImg"></div>
+            <a href='./' class="img mainLogo" style="font-family: 'Tangerine', cursive;">
+                <!-- <div class="img logoImg"></div> -->
                 Melange
             </a>
 
